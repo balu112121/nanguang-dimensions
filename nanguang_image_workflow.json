@@ -1,0 +1,42 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "加载图像"
+    },
+    "inputs": {
+      "image": "example.png"
+    }
+  },
+  "2": {
+    "class_type": "NanguangImageDimensions",
+    "_meta": {
+      "title": "南光图像尺寸"
+    },
+    "inputs": {
+      "image": [
+        "1",
+        0
+      ],
+      "preset_size": "1920x1080px  比例16:9(高清视频)",
+      "enable_custom": false,
+      "custom_width": 512,
+      "custom_height": 512,
+      "batch_size": 1,
+      "crop_method": "居中裁剪",
+      "scaling_method": "Lanczos"
+    }
+  },
+  "3": {
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    },
+    "inputs": {
+      "images": [
+        "2",
+        0
+      ]
+    }
+  }
+}

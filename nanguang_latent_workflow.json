@@ -1,0 +1,45 @@
+{
+  "1": {
+    "class_type": "NanguangEmptyLatentDimensions",
+    "_meta": {
+      "title": "南光空Latent图像尺寸"
+    },
+    "inputs": {
+      "preset_size": "512x512px      比例1:1(SD1.5-最小)",
+      "enable_custom": false,
+      "custom_width": 512,
+      "custom_height": 512,
+      "batch_size": 1
+    }
+  },
+  "2": {
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    },
+    "inputs": {
+      "model": [
+        "5",
+        0
+      ],
+      "seed": 42,
+      "steps": 20,
+      "cfg": 7,
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "positive": [
+        "3",
+        0
+      ],
+      "negative": [
+        "4",
+        0
+      ],
+      "latent_image": [
+        "1",
+        0
+      ],
+      "denoise": 1
+    }
+  }
+}
